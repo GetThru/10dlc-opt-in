@@ -1,0 +1,119 @@
+HTML
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="OIG css.css">
+  <link rel="icon" href="C:\Users\bchaa\Desktop\Privacy Policy Generator\2 - Copy - Copy 9_9_24\Images\favicon.png" type="image/x-icon">
+  <title>Opt-in Language Generator</title>
+</head>
+<body>
+
+<div class="banner">
+  <!-- Banner section with a logo image -->
+  <img src="C:\Users\bchaa\Desktop\Privacy Policy Generator\2 - Copy - Copy 9_9_24\Images\getthru-logo_2021_full-color.png" alt="Logo" class="logo">
+</div>
+
+<div class="header">
+  <!-- Header section containing the title of the privacy policy generator -->
+  <h1>Contact Source Opt-in Language Generator</h1>
+
+  <!-- Instructions paragraph -->
+  <p class="instructions">
+    Use this form to generate contact source opt-in language that complies with 10DLC requirements. Be sure to review and integrate the generated sections into your contact source as needed.
+  </p>
+
+</div>
+
+<div class="content">
+  <!-- Main content section -->
+
+  <!-- Wrapper with gray background that surrounds the white form wrapper -->
+  <div class="form-background">
+    <div class="form-wrapper">
+      
+      <!-- Text input form for collecting organization name -->
+      <form id="textForm" class="text-input-form">
+        <label for="organization">Organization Name: <span class="important">*</span></label>
+        <input type="text" id="organization" name="organization" required> 
+      </form>
+
+        <!-- Use case question -->
+        <form id="useCaseForm" class="multiplechoice-form">
+          <legend>Which use case are you registering for?<span class="important">*</span></legend>
+          <div class="radio-container">
+            <input type="radio" id="politicalusecasemc" name="usecase" value="Political">
+            <label for="politicalusecasemc">Political</label>
+          </div>
+          <div class="radio-container">
+            <input type="radio" id="charityusecasemc" name="usecase" value="Charity">
+            <label for="charityusecasemc">Charity</label>
+          </div>
+          <div class="radio-container">
+            <input type="radio" id="customercareusecasemc" name="usecase" value="Customer Care">
+            <label for="customercareusecasemc">Customer Care</label>
+          </div>
+          <div class="radio-container">
+            <input type="radio" id="pollingvotingusecasemc" name="usecase" value="Polling and Voting">
+            <label for="pollingvotingusecasemc">Polling and Voting</label>
+          </div>
+          <div class="radio-container">
+            <input type="radio" id="publicserviceusecasemc" name="usecase" value="Public Service Announcement">
+            <label for="publicserviceusecasemc">Public Service Announcement</label>
+          </div>
+          <div class="radio-container">
+            <input type="radio" id="higheredusecasemc" name="usecase" value="Higher Education">
+            <label for="higheredusecasemc">Higher Education</label>
+          </div>
+        </form>
+        
+       <div id="donationQuestionContainer" style="display: none;">
+          <legend>Are you sending donation-related text messages?</legend>
+          <div class="radio-container">
+              <input type="radio" id="donationYes" name="donation" value="yes">
+              <label for="donationYes">Yes</label>
+          </div>
+          <div class="radio-container">
+              <input type="radio" id="donationNo" name="donation" value="no">
+              <label for="donationNo">No</label>
+          </div>
+      </div>
+      
+
+        <!-- Text input form for collecting Privacy Policy Link -->
+        <form id="ppform" class="text-input-form">
+          <label for="pplink">Link to the Privacy Policy: <span class="important">*</span></label>
+          <input type="url" id="pplink" name="pplink" required> 
+        </form>
+
+        <!-- Text input form for collecting Terms & Conditions Link -->
+        <form id="tcform" class="text-input-form">
+          <label for="tclink">Link to Terms & Conditions: <span class="important">*</span></label>
+          <input type="url" id="tclink" name="tclink" required> 
+        </form>
+
+
+      <!-- Button to generate the Opt-in Language -->
+      <form id="additionalTextForm" class="generate-button">
+        <button type="button" id="showTextButton">Generate Opt-in Language</button>
+      </form>
+    
+    </div> <!-- End of form-wrapper -->
+  </div> <!-- End of form-background -->
+
+
+<!-- Paragraph to display the generated text -->
+<div id="displayText" class="generated-text"></div>
+
+<!-- Copy button BELOW generated text -->
+<button id="copyTextButtonBottom" class="generate-button" style="display: none;">Copy Opt-in Language</button>
+
+<!-- Custom notification for copy action -->
+<div id="copyNotification">Opt-in Language copied to clipboard!</div>
+
+
+<script src="OIG js.js"></script> <!-- External JavaScript file -->
+
+</body>
+</html>
